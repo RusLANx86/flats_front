@@ -3,11 +3,11 @@ import {ref} from "vue";
 
 const menu_items = ref([
   {
-    label: 'Файл',
+    label: 'Заказать решение',
     icon: 'pi pi-fw pi-file',
     items: [
       {
-        label: 'Новый',
+        label: 'Купить литературу',
         icon: 'pi pi-fw pi-plus',
         items: [
           {
@@ -34,7 +34,7 @@ const menu_items = ref([
     ]
   },
   {
-    label: 'Правка',
+    label: 'Онлайн обучение',
     icon: 'pi pi-fw pi-pencil',
     items: [
       {
@@ -56,7 +56,7 @@ const menu_items = ref([
     ]
   },
   {
-    label: 'Пользователи',
+    label: 'Самосевершенствование',
     icon: 'pi pi-fw pi-user',
     items: [
       {
@@ -90,7 +90,7 @@ const menu_items = ref([
     ]
   },
   {
-    label: 'Сабытия',
+    label: 'База задач',
     icon: 'pi pi-fw pi-calendar',
     items: [
       {
@@ -120,8 +120,8 @@ const menu_items = ref([
     ]
   },
   {
-    label: 'Выход',
-    icon: 'pi pi-fw pi-power-off'
+    label: 'Статьи',
+    icon: 'pi pi-fw pi-book'
   }
 ]);
 </script>

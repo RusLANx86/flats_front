@@ -5,23 +5,23 @@
     <DataTable :value="products" tableStyle="min-width: 50rem">
       <template #header>
         <div class="flex flex-wrap align-items-center justify-content-between gap-2">
-          <span class="text-xl text-900 font-bold">Products</span>
+          <span class="text-xl text-900 font-bold">Курсы</span>
           <my-button icon="pi pi-refresh" rounded raised />
         </div>
       </template>
-      <my-column field="name" header="Name"></my-column>
-      <my-column header="Image">
+      <my-column field="name" header="Наименование курса"></my-column>
+      <my-column header="какая-то колонка">
         <template #body="slotProps">
-          <img :src="`https://primefaces.org/cdn/primevue/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="w-6rem shadow-2 border-round" />
+          <img :src="`courses/${slotProps.data.image}`" :alt="slotProps.data.image" class="w-6rem shadow-2 border-round" />
         </template>
       </my-column>
-      <my-column field="price" header="Price">
+      <my-column field="price" header="Цена">
         <template #body="slotProps">
           {{ formatCurrency(slotProps.data.price) }}
         </template>
       </my-column>
-      <my-column field="category" header="Category"></my-column>
-      <my-column field="rating" header="Reviews">
+      <my-column field="trainer" header="Тренер"></my-column>
+      <my-column field="rating" header="Оценка">
         <template #body="slotProps">
           <my-rating :modelValue="slotProps.data.rating" readonly :cancel="false" />
         </template>
@@ -64,6 +64,4 @@ const getSeverity = (product) => {
       return null;
   }
 };
-
-
 </script>
