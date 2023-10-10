@@ -47,7 +47,7 @@ onMounted(() => {
 
 const products = ref();
 const formatCurrency = (value) => {
-  return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+  return value.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' });
 };
 const getSeverity = (product) => {
   switch (product.inventoryStatus) {
